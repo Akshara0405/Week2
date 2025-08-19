@@ -6,6 +6,6 @@ def home():
 		print("Form submitted successfully!")
 		print("Form Data:", request.form)
 		return "Registration successful!"
-	return render_template('register.html')
+	return render_template('templates/register.html')
 if __name__ == '__main__':
 	app.run(debug=True)
