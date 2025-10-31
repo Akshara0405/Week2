@@ -9,7 +9,7 @@ driver = webdriver.Chrome()
 wait = WebDriverWait(driver, 10)
 
 try:
-    driver.get("http://localhost:30700")  # Replace with correct port
+    driver.get("http://localhost:32006")  # Replace with correct port
 
     # Fill the form
     wait.until(EC.presence_of_element_located((By.NAME, "full_name"))).send_keys("Test User")
