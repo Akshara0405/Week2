@@ -17,9 +17,16 @@ pipeline {
                 sh 'kubectl apply -f /Users/aksharagarlapad/Desktop/week-2/deployment.yaml'
                 sh 'kubectl apply -f /Users/aksharagarlapad/Desktop/week-2/service.yaml'
             }
+        
+        }
+        stage('Automated UI Test') {
+            steps {
+                bat 'python C:/Devops/Week-2/test_registration.py'
+            }
         }
     }
 }
+
 
 
 
