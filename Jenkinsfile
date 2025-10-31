@@ -21,11 +21,12 @@ pipeline {
         }
         stage('Automated UI Test') {
             steps {
-                sh 'python /Users/aksharagarlapad/Desktop/week-2'
+                sh 'python /Users/aksharagarlapad/Desktop/week-2/test_registration.py'
             }
         }
     }
 }
+
 
 
 
