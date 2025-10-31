@@ -14,12 +14,13 @@ pipeline {
         }
         stage('Deploy to Kubernetes') {
             steps {
-                sh 'kubectl apply -f /Users/aksharagarlapad/Desktop/week-9-main/deployment.yaml'
-                sh 'kubectl apply -f /Users/aksharagarlapad/Desktop/week-9-main2/service.yaml'
+                sh 'kubectl apply -f /Users/aksharagarlapad/Desktop/week-2/deployment.yaml'
+                sh 'kubectl apply -f /Users/aksharagarlapad/Desktop/week-2/service.yaml'
             }
         }
     }
 }
+
 
 
 
